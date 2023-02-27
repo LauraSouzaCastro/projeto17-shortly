@@ -36,15 +36,7 @@ export async function signIn(req, res) {
 
         const token = uuidV4()
 
-        const session = await connection.query(`SELECT * FROM sessions WHERE "userId"=$1;`, [user.rows[0].id])
-        if(session.rowCount !== 0){
-            await connection.query(`DELETE FROM sessions WHERE "userId" = $1;`, [user.rows[0].id])
-        }
-
-        await connection.query(`
-            INSERT INTO sessions (token, "userId")
-            VALUES ($1, $2);
-        `, [token, user.rows[0].id])
+        await connection.query(`UPDATE users SET token=$1 WHERE id = $2;`, [token, user.rows[0].id])
 
         res.status(200).send({token})
     } catch (error) {
