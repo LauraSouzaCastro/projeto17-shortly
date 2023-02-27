@@ -29,8 +29,8 @@ CREATE TABLE public.urls (
     "shortUrl" text NOT NULL,
     url text NOT NULL,
     visitcount integer DEFAULT 0 NOT NULL,
-    "createdAt" date DEFAULT now() NOT NULL,
-    "userId" integer NOT NULL
+    "userId" integer NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT now() NOT NULL
 );
 
 
@@ -63,8 +63,8 @@ CREATE TABLE public.users (
     name text NOT NULL,
     email text NOT NULL,
     password text NOT NULL,
-    "createdAt" date DEFAULT now() NOT NULL,
-    token text
+    token text,
+    "createdAt" timestamp with time zone DEFAULT now()
 );
 
 
@@ -112,8 +112,7 @@ ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO public.users VALUES (3, 'f', 'f@d.com', '$2b$10$ukEcrJPHr5SIyxBAhlfskeaTZsSwBTkQUOYya/NnYauY/2owBfnwm', '2023-02-27', NULL);
-INSERT INTO public.users VALUES (4, 'fg', 'fg@d.com', '$2b$10$Ao2KqCapAZXuvBQopIlTL.pj.J/Wwd6Zy3KNNDBTgUlU9Rlvl77Da', '2023-02-27', '249187d9-2905-4a71-8dbb-a1e0fb6eff9f');
+INSERT INTO public.users VALUES (6, 'fg', 'fg@d.com', '$2b$10$KMSCyBXdrm2deGKi984OiOT7UJwRCMHWb5.86exXCwpffOIB0se3G', NULL, '2023-02-27 18:19:39.103376-03');
 
 
 --
@@ -127,7 +126,7 @@ SELECT pg_catalog.setval('public.urls_id_seq', 1, false);
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.users_id_seq', 4, true);
+SELECT pg_catalog.setval('public.users_id_seq', 6, true);
 
 
 --
