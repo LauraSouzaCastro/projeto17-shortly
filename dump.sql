@@ -153,6 +153,13 @@ INSERT INTO public.sessions VALUES (3, 'bc787178-8758-4b41-81c5-65d0d9c2dd67', '
 -- Data for Name: urls; Type: TABLE DATA; Schema: public; Owner: -
 --
 
+INSERT INTO public.urls VALUES (5, 'HArN9pN9dkehbzN3h1N8U', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:15.563847-03', 0);
+INSERT INTO public.urls VALUES (6, 'hbaOBfWetqQKnHXsePagB', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:17.002666-03', 0);
+INSERT INTO public.urls VALUES (7, 'OZHHmSaHwljPSastYkhX9', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:17.64814-03', 0);
+INSERT INTO public.urls VALUES (10, 'LYfyw_4_2BI3xuqWiJfKA', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:18.27661-03', 0);
+INSERT INTO public.urls VALUES (11, 'k7SRQwhLzx7AW62MOuB3l', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:18.490826-03', 3);
+INSERT INTO public.urls VALUES (9, '0ciJDUcFKejxbIqW49SME', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:18.055387-03', 2);
+INSERT INTO public.urls VALUES (8, 'AKHmOXs3uYx2CgWHHYRsE', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 18:05:17.837901-03', 2);
 
 
 --
@@ -174,7 +181,7 @@ SELECT pg_catalog.setval('public.sessions_id_seq', 3, true);
 -- Name: urls_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.urls_id_seq', 4, true);
+SELECT pg_catalog.setval('public.urls_id_seq', 11, true);
 
 
 --
