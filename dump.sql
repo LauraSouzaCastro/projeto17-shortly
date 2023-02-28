@@ -146,13 +146,13 @@ ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_
 
 INSERT INTO public.sessions VALUES (1, '875f5f1d-643e-4bf2-9415-f9dc6a92be2a', '2023-02-27 18:32:39.588508-03', 7);
 INSERT INTO public.sessions VALUES (2, '771f2969-cd26-421c-966f-4973ecd10a26', '2023-02-27 18:32:54.579621-03', 7);
+INSERT INTO public.sessions VALUES (3, 'bc787178-8758-4b41-81c5-65d0d9c2dd67', '2023-02-28 17:26:42.506908-03', 8);
 
 
 --
 -- Data for Name: urls; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-INSERT INTO public.urls VALUES (4, 'mvjt0DEYhmr0gI1Pl1j3M', 'https://www.geeksforgeeks.org/express-js-res-redirect-function/', 7, '2023-02-28 17:06:10.546544-03', 4);
 
 
 --
@@ -160,13 +160,14 @@ INSERT INTO public.urls VALUES (4, 'mvjt0DEYhmr0gI1Pl1j3M', 'https://www.geeksfo
 --
 
 INSERT INTO public.users VALUES (7, 'fg', 'fg@d.com', '$2b$10$1hnrSlNBuX3m4xagyevC5OQfSfYhCULAXBhjZxnLo1yXUcRlW1NAK', '2023-02-27 18:31:53.520888-03');
+INSERT INTO public.users VALUES (8, 'fg', 'fgf@d.com', '$2b$10$0sfR9yl2Xzb2s4QLamI8y.JjLUBSL/MxfhjpvWyGhxbrJYOW4TEle', '2023-02-28 17:26:28.624597-03');
 
 
 --
 -- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.sessions_id_seq', 2, true);
+SELECT pg_catalog.setval('public.sessions_id_seq', 3, true);
 
 
 --
@@ -180,7 +181,7 @@ SELECT pg_catalog.setval('public.urls_id_seq', 4, true);
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.users_id_seq', 7, true);
+SELECT pg_catalog.setval('public.users_id_seq', 8, true);
 
 
 --
