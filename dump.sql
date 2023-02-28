@@ -152,6 +152,9 @@ INSERT INTO public.sessions VALUES (2, '771f2969-cd26-421c-966f-4973ecd10a26', '
 -- Data for Name: urls; Type: TABLE DATA; Schema: public; Owner: -
 --
 
+INSERT INTO public.urls VALUES (1, 'T6AmwquCYif5Hk2jYUQwl', 'https://www.google.com/search?channel=fs&client=ubuntu&q=tradutor', 0, 7, '2023-02-28 16:37:02.723706-03');
+INSERT INTO public.urls VALUES (2, 'LrwHfw_OkEqEDzkorqHla', 'https://www.google.com/search?channel=fs&client=ubuntu&q=traduor', 0, 7, '2023-02-28 16:37:34.240463-03');
+INSERT INTO public.urls VALUES (3, 'Ib5ySDo9Ocn_RaTZ1UfQV', 'https://www.google.com/search?channel=fs&client=ubuntu&q=traduor', 0, 7, '2023-02-28 16:37:46.971602-03');
 
 
 --
@@ -172,7 +175,7 @@ SELECT pg_catalog.setval('public.sessions_id_seq', 2, true);
 -- Name: urls_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.urls_id_seq', 1, false);
+SELECT pg_catalog.setval('public.urls_id_seq', 3, true);
 
 
 --

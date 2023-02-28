@@ -1,4 +1,4 @@
-import joi from 'joi';
+import joi from 'joi'
 
 export const signUpSchema = joi.object({
     name: joi.string().required().error(new Error('Preencha com um nome válido!')),
